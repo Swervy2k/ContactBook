@@ -1,0 +1,42 @@
+﻿<Window x:Class="ProjectExample.Create_Contact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectExample"
+        mc:Ignorable="d"
+        Title="Create Contact" Height="430" Width="700">
+    <Grid RenderTransformOrigin="0.507,0.451">
+        <TextBlock x:Name="textBlock" Text="Contact Information" TextAlignment="Center" HorizontalAlignment="Left" Margin="8,9,0,0" TextWrapping="Wrap" Width="195" Height="26" VerticalAlignment="Top" FontFamily="Script MT Bold" FontSize="20" TextDecorations="{x:Null}" RenderTransformOrigin="-0.103,0.681"/>
+        <Separator HorizontalAlignment="Left" Height="0" Margin="16,35,0,0" VerticalAlignment="Top" Width="662" BorderThickness="1" Background="Black" Opacity="100"/>
+
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="8,62,0,0" TextWrapping="Wrap" Text="ID:" TextAlignment="Center" VerticalAlignment="Top" Width="57" Height="35" FontFamily="Sylfaen" FontSize="20" FontStyle="Italic" RenderTransformOrigin="0.142,-0.33"/>
+        <TextBox x:Name="titleTextbox" HorizontalAlignment="Left" Height="32" Margin="170,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontFamily="Nirmala UI" FontSize="22" FontStyle="Italic"/>
+
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="8,112,0,0" TextWrapping="Wrap" Text="First Name:" TextAlignment="Center" VerticalAlignment="Top" Width="114" Height="35" FontFamily="Sylfaen" FontSize="20" FontStyle="Italic" RenderTransformOrigin="0.142,-0.33"/>
+        <TextBox x:Name="firstNameTextbox" HorizontalAlignment="Left" Height="32" Margin="170,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="22" FontStyle="Italic" FontFamily="Nirmala UI"/>
+
+        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Margin="8,162,0,0" TextWrapping="Wrap" Text="Last Name:" TextAlignment="Center" VerticalAlignment="Top" Width="114" Height="35" FontFamily="Sylfaen" FontSize="20" FontStyle="Italic" RenderTransformOrigin="0.142,-0.33"/>
+        <TextBox x:Name="lastNameTextbox" HorizontalAlignment="Left" Height="32" Margin="170,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="22" FontStyle="Italic" FontFamily="Nirmala UI"/>
+
+        <TextBlock x:Name="textBlock1_Copy2" HorizontalAlignment="Left" Margin="8,212,0,0" TextWrapping="Wrap" Text="Preferred Name:" TextAlignment="Center" VerticalAlignment="Top" Width="157" Height="35" FontFamily="Sylfaen" FontSize="20" FontStyle="Italic" RenderTransformOrigin="0.142,-0.33"/>
+        <TextBox x:Name="preferredNameTextbox" HorizontalAlignment="Left" Height="32" Margin="170,210,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="22" FontStyle="Italic" FontFamily="Nirmala UI"/>
+
+        <TextBlock x:Name="textBlock1_Copy3" HorizontalAlignment="Left" Margin="350,62,0,0" TextWrapping="Wrap" Text="Home Phone:" TextAlignment="Center" VerticalAlignment="Top" Width="133" Height="35" FontFamily="Sylfaen" FontSize="20" FontStyle="Italic" RenderTransformOrigin="0.142,-0.33"/>
+        <TextBox x:Name="homePhoneTextbox" HorizontalAlignment="Left" Height="32" Margin="516,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="22" FontFamily="Nirmala UI" TextDecorations="{x:Null}" FontStyle="Italic"/>
+
+        <TextBlock x:Name="textBlock1_Copy4" HorizontalAlignment="Left" Margin="350,112,0,0" TextWrapping="Wrap" Text="Mobile Phone:" TextAlignment="Center" VerticalAlignment="Top" Width="133" Height="35" FontFamily="Sylfaen" FontSize="20" FontStyle="Italic" RenderTransformOrigin="0.142,-0.33"/>
+        <TextBox x:Name="mobilePhoneTextbox" HorizontalAlignment="Left" Height="32" Margin="516,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="22" FontFamily="Nirmala UI" TextDecorations="{x:Null}" FontStyle="Italic"/>
+
+        <TextBlock x:Name="textBlock1_Copy5" HorizontalAlignment="Left" Margin="8,265,0,0" TextWrapping="Wrap" Text="eMail Address:" TextAlignment="Center" VerticalAlignment="Top" Width="133" Height="35" FontFamily="Sylfaen" FontSize="20" FontStyle="Italic" RenderTransformOrigin="0.142,-0.33"/>
+        <TextBox x:Name="emailTextbox" HorizontalAlignment="Left" Height="32" Margin="170,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="330" FontSize="22" FontFamily="Nirmala UI" TextDecorations="{x:Null}" FontStyle="Italic"/>
+        
+        <TextBlock x:Name="textBlock1_Copy6" HorizontalAlignment="Left" Margin="350,162,0,0" TextWrapping="Wrap" Text="Home Address:" TextAlignment="Center" VerticalAlignment="Top" Width="133" Height="35" FontFamily="Sylfaen" FontSize="20" FontStyle="Italic" RenderTransformOrigin="0.142,-0.33"/>
+        <TextBox x:Name="homeAddressTextbox" HorizontalAlignment="Left" Height="133" Margin="516,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="18" FontFamily="Nirmala UI" TextDecorations="{x:Null}" FontStyle="Italic"/>
+
+        <Button x:Name="Save_button" Content="Save" HorizontalAlignment="Left" Margin="521,319,0,0" VerticalAlignment="Top" Width="147" Height="63" FontFamily="Script MT Bold" FontSize="22" BorderThickness="0" FontWeight="Bold" Background="{x:Null}" Opacity="0.75" Click="Save_button_Click" RenderTransformOrigin="-0.297,0.664"/>
+
+        <Button x:Name="Update_button" Content="Update" HorizontalAlignment="Left" Margin="372,319,0,0" VerticalAlignment="Top" Width="147" Height="63" FontFamily="Script MT Bold" FontSize="22" BorderThickness="0" FontWeight="Bold" Background="{x:Null}" Opacity="0.75" RenderTransformOrigin="-0.297,0.664" Click="Update_button_Click"/>
+
+    </Grid>
+</Window>
